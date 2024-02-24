@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "luzamod:block/egg_bed" },
-    "facing=east": { "model": "luzamod:block/egg_bed", "y": 90 },
-    "facing=south": { "model": "luzamod:block/egg_bed", "y": 180 },
-    "facing=west": { "model": "luzamod:block/egg_bed", "y": 270 }
-  }
-}

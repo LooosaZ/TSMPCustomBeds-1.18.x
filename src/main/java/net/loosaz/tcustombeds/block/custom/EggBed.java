@@ -1,4 +1,4 @@
-package net.loosaz.luzamod.block.custom;
+package net.loosaz.tcustombeds.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -34,8 +34,6 @@ public class EggBed extends Block {
 
         // Select the appropriate shape based on the facing direction
         switch (facing) {
-            case NORTH:
-                return SHAPE_NORTH;
             case EAST:
                 return SHAPE_EAST;
             case SOUTH:

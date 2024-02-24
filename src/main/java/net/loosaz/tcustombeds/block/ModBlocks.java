@@ -1,9 +1,9 @@
-package net.loosaz.luzamod.block;
+package net.loosaz.tcustombeds.block;
 
-import net.loosaz.luzamod.LuzaMod;
-import net.loosaz.luzamod.block.custom.EggBed;
-import net.loosaz.luzamod.items.ModCreativeModeTab;
-import net.loosaz.luzamod.items.ModItems;
+import net.loosaz.tcustombeds.TCustomBeds;
+import net.loosaz.tcustombeds.block.custom.EggBed;
+import net.loosaz.tcustombeds.items.ModCreativeModeTab;
+import net.loosaz.tcustombeds.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -20,14 +20,10 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, LuzaMod.MOD_ID);
-
-    public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.LUZABOT_TAB);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, TCustomBeds.MOD_ID);
 
     public static final RegistryObject<Block> EGG_BED = registerBlock("egg_bed",
-            () -> new EggBed(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()), ModCreativeModeTab.LUZABOT_TAB);
+            () -> new EggBed(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()), ModCreativeModeTab.TCUSTOMBEDS_TAB);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

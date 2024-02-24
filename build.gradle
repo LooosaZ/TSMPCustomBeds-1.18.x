@@ -20,8 +20,8 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
 version = '1.0.1.18.2'
-group = 'net.loosaz.luzamod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'luzamod'
+group = 'net.loosaz.tcustombeds' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'tcustombeds'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -64,10 +64,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'luzamod'
+            property 'forge.enabledGameTestNamespaces', 'tcustombeds'
 
             mods {
-                luzamod {
+                tcustombeds {
                     source sourceSets.main
                 }
             }
@@ -81,10 +81,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'luzamod'
+            property 'forge.enabledGameTestNamespaces', 'tcustombeds'
 
             mods {
-                luzamod {
+                tcustombeds {
                     source sourceSets.main
                 }
             }
@@ -109,10 +109,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'luzamod'
+            property 'forge.enabledGameTestNamespaces', 'tcustombeds'
 
             mods {
-                luzamod {
+                tcustombeds {
                     source sourceSets.main
                 }
             }
@@ -126,10 +126,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'luzamod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'tcustombeds', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                luzamod {
+                tcustombeds {
                     source sourceSets.main
                 }
             }
@@ -173,12 +173,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "luzamod",
-                "Specification-Vendor"    : "luzamodsareus",
+                "Specification-Title"     : "tcustombeds",
+                "Specification-Vendor"    : "tcustombedssareus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "luzamodsareus",
+                "Implementation-Vendor"   : "tcustombedssareus",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

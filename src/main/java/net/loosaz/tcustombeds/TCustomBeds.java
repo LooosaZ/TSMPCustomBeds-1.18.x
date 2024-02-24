@@ -1,8 +1,8 @@
-package net.loosaz.luzamod;
+package net.loosaz.tcustombeds;
 
 import com.mojang.logging.LogUtils;
-import net.loosaz.luzamod.block.ModBlocks;
-import net.loosaz.luzamod.items.ModItems;
+import net.loosaz.tcustombeds.block.ModBlocks;
+import net.loosaz.tcustombeds.items.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -15,14 +15,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(LuzaMod.MOD_ID)
-public class LuzaMod {
-    public static final String MOD_ID = "luzamod";
+@Mod(TCustomBeds.MOD_ID)
+public class TCustomBeds {
+    public static final String MOD_ID = "tcustombeds";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public LuzaMod() {
+    public TCustomBeds() {
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

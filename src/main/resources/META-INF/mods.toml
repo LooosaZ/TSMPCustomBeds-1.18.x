@@ -15,28 +15,28 @@ license="MIT"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="luzamod" #mandatory
+modId="tcustombeds" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
 version="1.0.0-1.18.2" #mandatory
  # A display name for the mod
-displayName="LuzaMod" #mandatory
+displayName="TCustomBeds" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="examplemod.png" #optional
+logoFile="" #optional
 # A text field displayed in the mod UI
-credits="Thanks for this mod goes to Java!" #optional
+credits="Obrigado povo do tribunal <3 // Thank you dirt 1 grinders <3" #optional
 # A text field displayed in the mod UI
 authors="LoosaZ" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 This mod adds some 3d models into the game, it is idealized for roleplay usage in Tortuguitas SMP, roleplaying minecraft server.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.luzamod]] #optional
+[[dependencies.tcustombeds]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -48,7 +48,7 @@ This mod adds some 3d models into the game, it is idealized for roleplay usage i
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.examplemod]]
+[[dependencies.tcustombeds]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

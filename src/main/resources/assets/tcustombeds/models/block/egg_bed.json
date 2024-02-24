@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "luzamod:block/egg_bed",
+		"1": "tcustombeds:block/egg_bed",
 		"particle": "minecraft:block/oak_planks"
 	},
 	"elements": [
