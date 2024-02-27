@@ -39,6 +39,8 @@ public class TCustomBeds {
     private void clientSetup(final FMLClientSetupEvent event) {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.EGG_BED.get(), RenderType.cutout());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGI_EGG_BED.get(), RenderType.cutout());
     }
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code

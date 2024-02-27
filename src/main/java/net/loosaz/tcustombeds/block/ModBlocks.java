@@ -30,6 +30,10 @@ public class ModBlocks {
         return toReturn;
     }
 
+    public static final RegistryObject<Block> VEGI_EGG_BED = registerBlock("vegi_egg_bed",
+            () -> new EggBed(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()), ModCreativeModeTab.TCUSTOMBEDS_TAB);
+
+
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                             CreativeModeTab tab) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
