@@ -14,11 +14,11 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-// Creating the EggBed class with Block class properties
-public class EggBed extends Block {
+// Create the ArchEggBed class using the Block class properties
+public class ArchEggBed extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    public EggBed(Properties properties) {
+    public ArchEggBed(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "tcustombeds:block/arch_egg_bed" },
+    "facing=east": { "model": "tcustombeds:block/arch_egg_bed", "y": 90 },
+    "facing=south": { "model": "tcustombeds:block/arch_egg_bed", "y": 180 },
+    "facing=west": { "model": "tcustombeds:block/arch_egg_bed", "y": 270 }
+  }
+}

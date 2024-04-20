@@ -23,7 +23,7 @@ public class TCustomBeds {
 
 
     public TCustomBeds() {
-        // Register the setup method for modloading
+        // Register the setup method for mod loading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
